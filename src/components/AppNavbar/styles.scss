@@ -1,9 +1,14 @@
 .app-navbar {
-  .header {
-    background-color: #F4F4F4!important;
-    height: 60px;
-    .avatar{
-      border-width: 2px !important;
+  .brand-title{
+    p{
+      font-size: 20px;
+      color: #1B91FF;
+      font-weight: 600;
     }
   }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 8px;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.2);
 }

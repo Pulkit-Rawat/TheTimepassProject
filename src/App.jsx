@@ -9,10 +9,10 @@ import Login from "./views/Auth/Login";
 import Register from "./views/Auth/Register";
 
 import "./App.css";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 const Dashboard = lazy(() => import("./views/Dashboard"));
 const Chat = lazy(() => import("./views/Chat"));
@@ -23,9 +23,9 @@ const Employees = lazy(() => import("./views/Employees"));
 const Products = lazy(() => import("./views/Products"));
 const Cart = lazy(() => import("./views/Cart"));
 const OrderSummary = lazy(() => import("./views/OrderSummary"));
+const Polls = lazy(() => import("./views/Polls"));
 
 const App = () => {
-
   const { theme } = useThemeContext();
   return (
     <div
@@ -38,6 +38,7 @@ const App = () => {
             <Routes>
               <Route element={<ProtectedRoute />}>
                 <Route path="/" element={<Dashboard />} />
+                <Route path="/polls" element={<Polls />} />
                 <Route path="/app/chat" element={<Chat />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/account/profile" element={<Profile />} />

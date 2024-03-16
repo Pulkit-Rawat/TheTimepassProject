@@ -1,0 +1,17 @@
+.blogs-wrapper {
+  .blog-card {
+    .banner {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .desc{
+      p{
+        font-weight: 600;
+        text-align: start;
+        font-size: 18px;
+      }
+    }
+  }
+}

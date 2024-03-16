@@ -3,9 +3,9 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 
 import AppNavbar from "../components/AppNavbar";
-import AppSidebar from "../components/AppSidebar";
 
 import "./styles.scss";
+import ScrollableSubHeader from "../components/ScrollableSubHeader.jsx";
 
 const ProtectedRoute = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const ProtectedRoute = () => {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      navigate("/login");
+      // navigate("/login");
     }
   }, []);
 
@@ -26,7 +26,7 @@ const ProtectedRoute = () => {
       </Row>
 
       <div className="app-wrapper">
-        <AppSidebar />
+        <ScrollableSubHeader />
         <Outlet />
       </div>
     </Container>
